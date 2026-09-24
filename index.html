@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsaid — say the thing you've never said out loud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/logo.png">
+</head>
+
+<body>
+
+
+
+    <nav>
+        <a href="./" class="brand">
+            <img src="img/logo.png" alt="Unsaid Logo" class="brand-logo">
+            Unsaid
+        </a>
+        <div class="links">
+            <a href="#what">What it is</a>
+            <a href="#how">How it works</a>
+            <a href="#wall">The wall</a>
+            <a href="#ecosystem">Partnerships</a>
+        </div>
+        <a class="cta" href="confession/">Enter</a>
+    </nav>
+
+    <section class="hero inner" id="heroSection">
+        <span class="hero-note" style="margin-bottom: 12px;">
+            <img src="img/BotChainlogo.png" alt="BOT Chain"
+                style="height:22px;width:auto;object-fit:contain;vertical-align:middle;">
+            Built on BOT Chain
+        </span>
+        <div class="hero-eyebrow">ANONYMOUS · ON-CHAIN · PERMANENT</div>
+        <h1 class="serif">Say the thing<br>you've <em>never</em> said<br>out loud.</h1>
+        <p>Unsaid is a confession wall built on BOT Chain, a fast public blockchain. Connect a wallet, post what you have never said out loud, and it stays there forever. No account, no real name, and nobody can delete it.</p>
+        <div class="hero-actions">
+            <div class="hero-cta-row">
+                <a class="btn-primary" href="confession/">
+                    Enter the wall
+                    <span class="arrow">→</span>
+                </a>
+                <a class="btn-scan" href="https://scan.botchain.ai/address/0x2294Ec87eC1e7DD00b58824933fAB8BbB5Dc3F9F"
+                    target="_blank" rel="noopener">
+                    View Contract on BOT Scan
+                    <span style="font-size:12px">↗</span>
+                </a>
+            </div>
+            <div class="hero-announce">
+                <span class="hero-announce-dot"></span>
+                Now live on BOT Chain Mainnet
+            </div>
+        </div>
+        <div class="stat-strip">
+            <span class="pulse"></span>
+            <span><strong id="liveCount">–</strong> confessions recorded permanently across BOT Chain networks</span>
+        </div>
+
+        <div class="hero-visual" id="heroVisual">
+            <div class="glyph" id="heroGlyph">
+                <svg viewBox="0 0 300 300" fill="none">
+                    <circle cx="150" cy="150" r="110" stroke="#C47B2B" stroke-width="1" opacity="0.22" />
+                    <path d="M150 40 C 90 40, 50 90, 50 150 C 50 210, 90 260, 150 260" stroke="#C47B2B" stroke-width="2"
+                        opacity="0.5" />
+                    <circle cx="150" cy="150" r="86" stroke="#C47B2B" stroke-width="1" opacity="0.32" />
+                    <circle cx="150" cy="150" r="58" stroke="#7A726A" stroke-width="1" opacity="0.25" />
+                    <path d="M150 64 C 195 64, 226 100, 226 150 C 226 200, 195 236, 150 236" stroke="#7A726A"
+                        stroke-width="1" opacity="0.35" />
+                    <circle cx="150" cy="150" r="3" fill="#C47B2B" />
+                    <circle cx="226" cy="150" r="2.5" fill="#7A726A" opacity="0.6" />
+                    <circle cx="50" cy="150" r="2.5" fill="#C47B2B" opacity="0.7" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel-section inner" id="what">
+        <div class="section-head reveal">
+            <div class="eyebrow">WHAT IT HOLDS</div>
+            <h2 class="serif">Three permanent, honest layers.</h2>
+            <p>Every confession is stored directly on BOT Chain smart contracts. That means no server can go down, no one can censor it, and nothing can be quietly changed after the fact.</p>
+        </div>
+
+        <div class="panel reveal">
+            <div class="feature-grid">
+                <div class="feature">
+                    <span class="mark">✦</span>
+                    <h3>Anonymous authorship</h3>
+                    <p>Your wallet signs each post to prove it is real, but your name and identity are never revealed. Just enough to stop spam, private enough to be fully honest.</p>
+                </div>
+                <div class="feature">
+                    <span class="mark">✦</span>
+                    <h3>Permanent record</h3>
+                    <p>BOT Chain stores confessions on a public ledger that no one can change. Once posted, it stays exactly as written forever. Not even the developer can delete it.</p>
+                </div>
+                <div class="feature">
+                    <span class="mark">✦</span>
+                    <h3>Quiet reactions</h3>
+                    <p>React to confessions with a simple tap. Each reaction is recorded on BOT Chain instantly. No comment threads, no drama, just a quiet signal that you felt something too.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section inner" id="how">
+        <div class="section-head reveal">
+            <div class="eyebrow">HOW IT WORKS</div>
+            <h2 class="serif">Three steps, one wallet.</h2>
+        </div>
+
+        <div class="steps reveal" id="stepsList">
+            <div class="step active" data-step="1">
+                <div class="num serif">1</div>
+                <div>
+                    <h3>Connect your wallet <span class="plus">+</span></h3>
+                    <p>No account, email, or password needed. Just connect your wallet (like MetaMask). Your wallet address proves you are a real person without revealing who you are.</p>
+                </div>
+            </div>
+            <div class="step" data-step="2">
+                <div class="num serif">2</div>
+                <div>
+                    <h3>Write what you've never said <span class="plus">+</span></h3>
+                    <p>Up to 280 characters. A regret, a secret, or a truth you've held inside. Published with near-zero
+                        gas fees and sub-second confirmation on BOT Chain.</p>
+                </div>
+            </div>
+            <div class="step" data-step="3">
+                <div class="num serif">3</div>
+                <div>
+                    <h3>Read, and react quietly <span class="plus">+</span></h3>
+                    <p>Browse confessions from people around the world. Tap a reaction to show you felt it too. BOT Chain confirms it in under a second with near-zero cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wall-preview inner" id="wall">
+        <div class="section-head reveal">
+            <div class="eyebrow">FROM THE WALL</div>
+            <h2 class="serif">A few things people have said.</h2>
+        </div>
+
+        <div class="quote-row reveal">
+            <div class="quote-card">
+                <div class="quote-body-wrapper">
+                    <div class="quote-mark left">“</div>
+                    <p class="serif">I still check their instagram every single day and I hate that I do it.</p>
+                    <div class="quote-mark right">”</div>
+                </div>
+                <div class="quote-footer">
+                    <div class="poster-meta">
+                        <span class="poster-addr">0x71b2…9e</span>
+                        <span class="poster-separator">·</span>
+                        <span class="poster-time">5h ago</span>
+                    </div>
+                    <div class="reaction-wrapper">
+                        <span class="reaction-pill">❤️ 12</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-body-wrapper">
+                    <div class="quote-mark left">“</div>
+                    <p class="serif">I told my team I finished the report. I haven't started it.</p>
+                    <div class="quote-mark right">”</div>
+                </div>
+                <div class="quote-footer">
+                    <div class="poster-meta">
+                        <span class="poster-addr">0x4c1f…a7</span>
+                        <span class="poster-separator">·</span>
+                        <span class="poster-time">12h ago</span>
+                    </div>
+                    <div class="reaction-wrapper">
+                        <span class="reaction-pill">😳 8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-body-wrapper">
+                    <div class="quote-mark left">“</div>
+                    <p class="serif">I'm genuinely proud of the thing I'm building right now.</p>
+                    <div class="quote-mark right">”</div>
+                </div>
+                <div class="quote-footer">
+                    <div class="poster-meta">
+                        <span class="poster-addr">0xde09…12</span>
+                        <span class="poster-separator">·</span>
+                        <span class="poster-time">1d ago</span>
+                    </div>
+                    <div class="reaction-wrapper">
+                        <span class="reaction-pill">🔥 21</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="try-it reveal">
+            <div class="try-it-label">Try it out. Nothing is sent or saved. This is just a preview.</div>
+            <textarea id="tryInput" maxlength="280" placeholder="Something you've never said out loud…"></textarea>
+            <div class="try-it-footer">
+                <span id="tryCount">280 characters left</span>
+                <span id="tryHint">↵ or click below to preview</span>
+            </div>
+            <div class="preview-card" id="previewCard">
+                <div class="quote-body-wrapper">
+                    <div class="quote-mark left">“</div>
+                    <p class="serif" id="previewText"></p>
+                    <div class="quote-mark right">”</div>
+                </div>
+                <div class="quote-footer">
+                    <div class="poster-meta">
+                        <span class="poster-addr" id="previewAddr">0x••••…••••</span>
+                        <span class="poster-separator">·</span>
+                        <span class="poster-time">Just now</span>
+                    </div>
+                    <div class="reaction-wrapper">
+                        <span class="reaction-pill" id="previewReact">0 reactions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ecosystem-section inner" id="ecosystem">
+        <div class="section-head reveal">
+            <div class="eyebrow">ECOSYSTEM &amp; PARTNERSHIPS</div>
+            <h2 class="serif">Powered by the BOT Chain Ecosystem</h2>
+            <p>Unsaid runs on BOT Chain, a Layer 1 blockchain designed for speed, low cost, and reliability. Think of it as the infrastructure that keeps your confessions permanent and tamper-proof, without needing a server.</p>
+        </div>
+
+        <div class="ecosystem-cards reveal">
+            <a href="https://www.botchain.ai/en/" target="_blank" rel="noopener" class="eco-card">
+                <div class="eco-card-header">
+                    <img src="img/bot-full-logo-dark.png" alt="BOT Chain Logo" class="eco-logo">
+                    <span class="eco-badge">Official L1 Website</span>
+                </div>
+                <h3>BOT Chain Protocol</h3>
+                <p>Explore the EVM-compatible Layer 1 architecture, developer documentation, and ecosystem portals
+                    designed for AI agents and DePIN networks.</p>
+                <div class="eco-link-label">
+                    <span>Visit botchain.ai</span>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+
+            <a href="https://scan.botchain.ai/" target="_blank" rel="noopener" class="eco-card">
+                <div class="eco-card-header">
+                    <img src="img/bot-logo-dark.png" alt="BOT Scan Logo" class="eco-logo">
+                    <span class="eco-badge">Network Explorer</span>
+                </div>
+                <h3>BOT Chain Explorer (BOT Scan)</h3>
+                <p>Inspect real-time blocks, contract interactions, transactions, and verify Unsaid's deployed smart
+                    contract live on BOT Scan.</p>
+                <div class="eco-link-label">
+                    <span>Open scan.botchain.ai</span>
+                    <span class="arrow">↗</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="closing inner">
+        <h2 class="serif reveal">Some things are easier to say <em>anonymously</em>.</h2>
+        <a class="btn-primary reveal" href="confession/">
+            Enter the wall
+            <span class="arrow">→</span>
+        </a>
+    </section>
+
+    <footer>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="img/logo.png" alt="Unsaid" style="width: 26px; height: 26px; border-radius: 50%; opacity: 0.9;">
+            <span>Unsaid — The Things Left Unsaid</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+            <a href="https://www.botchain.ai/en/" target="_blank" rel="noopener" title="BOT Chain Website"
+                style="display: flex; align-items: center;">
+                <img src="img/bot-full-logo-dark.png" alt="BOT Chain"
+                    style="height: 22px; width: auto; object-fit: contain;">
+            </a>
+            <span style="color: var(--border);">|</span>
+            <a href="https://scan.botchain.ai/" target="_blank" rel="noopener" title="BOT Chain Explorer"
+                style="display: flex; align-items: center;">
+                <img src="img/bot-logo-dark.png" alt="BOT Chain Explorer"
+                    style="height: 22px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.2/ethers.umd.min.js"></script>
+    <script src="js/contract.js"></script>
+    <script src="js/landing.js"></script>
+</body>
+
+</html>
